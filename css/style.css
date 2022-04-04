@@ -1,0 +1,88 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    height: 100vh;
+}
+
+.container {
+    background-color: #582121;
+    text-align: center;
+    padding: 1em;
+    display: flex;
+    justify-content: center;
+    margin: 1em 0;
+}
+
+input {
+    padding: 1em;
+    color: #ffffff;
+    font-size: 16px;
+    background-color: #7a6b7c;
+    border: none;
+}
+
+.btn1,
+.btn2 {
+    padding: 1em;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    color: #ffffff;
+    background-color: #384438;
+}
+
+h1 {
+    text-align: center;
+    padding: 1em;
+    font-family: helvetica, arial, sans-serif;
+    text-shadow: 0 0 5px #000000;
+    color: #ffffff;
+}
+
+.myclass {
+    width: 10em;
+    text-align: center;
+    box-shadow: 0 0 5px #000000;
+    height: 3em;
+    border-radius: 5px;
+    top: 1em;
+    right: 1em;
+    position: fixed;
+    background: #079e2d;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.animation-in {
+    animation-name: move-in;
+    animation-duration: 2s;
+}
+
+@keyframes move-in {
+    0% {
+        transform: translateX(200px);
+    }
+    100% {
+        transform: translateX(0px);
+    }
+}
+
+.animation-out {
+    animation-name: move-out;
+    animation-duration: 2s;
+}
+
+@keyframes move-out {
+    0% {
+        transform: translateX(0px);
+    }
+    100% {
+        transform: translateX(200px);
+    }
+}
